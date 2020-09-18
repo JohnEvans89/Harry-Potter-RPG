@@ -58,21 +58,21 @@ public class Helper {
 		System.out.println("XP: " + player.xp);
 		printSeperator(20);
 
-		// printing the chosen traits
-		if (player.numAtkUpgrades > 0) {
-			System.out.println("Offensive trait: " + player.atkUpgrades[player.numAtkUpgrades - 1]);
-			printSeperator(20);
-		}
-		if (player.numDefUpgrades > 0) {
-			System.out.println("Defensive trait: " + player.defUpgrades[player.numDefUpgrades - 1]);
-		}
+		// // printing the chosen traits
+		// if (player.numAtkUpgrades > 0) {
+		// 	System.out.println("Offensive trait: " + player.atkUpgrades[player.numAtkUpgrades - 1]);
+		// 	printSeperator(20);
+		// }
+		// if (player.numDefUpgrades > 0) {
+		// 	System.out.println("Defensive trait: " + player.defUpgrades[player.numDefUpgrades - 1]);
+		// }
 
 		anythingToContinue();
 	}
 
 	// method to simulate clearing out the console
 	public static void clearConsole() {
-		for (int i = 0; i < 100; i++)
+		for (int i = 0; i < 10; i++)
 			System.out.println();
 	}
 
@@ -92,8 +92,8 @@ public class Helper {
 
 	// method to stop the game until user enters anything
 	public static void anythingToContinue() {
-		System.out.println("\nEnter anything to continue...");
-		scanner.next();
+		System.out.println("\nEnter to continue...");
+		scanner.nextLine();
 	}
 
 }

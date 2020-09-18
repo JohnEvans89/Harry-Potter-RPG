@@ -3,7 +3,7 @@ package com.john_evans;
 public class Player extends Character {
 
 	public int numAtkUpgrades, numDefUpgrades;
-
+//Helper h = new Helper(); 
 	public String[] atkUpgrades = { "Strength", "Power", "Might", "Gpdlike Strength" };
 	public String[] defUpgrades = { "Heavy Bones", "Stoneskin", "Scale Armor", "Holy Aura" };
 	public String school;
@@ -12,7 +12,8 @@ public class Player extends Character {
 		super(name, 100, 0);
 		this.numAtkUpgrades = 0;
 		this.numDefUpgrades = 0;
-		chooseCountry();
+        //chooseCountry();
+        //Helper.characterInfo();
 		// TODO Auto-generated constructor stub
 	}
 
@@ -27,6 +28,8 @@ public class Player extends Character {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+
+
 
 	public void chooseCountry() {
 		Helper.clearConsole();
@@ -61,7 +64,8 @@ public class Player extends Character {
 		}
 		if (input == 7) {
 			System.out.println("MAHOUTOKORO");
-		}
+        }
+        
 	}
 
 	public void chooseTrait() {
