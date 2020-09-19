@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Story {
 	static Player player;
 	static Scanner scanner = new Scanner(System.in);
-Helper h = new Helper();
+ 
 	public static void startGame() {
 		boolean nameSet = false;
 		Helper.isRunning = true;
@@ -38,6 +38,8 @@ Helper h = new Helper();
 		// create new player object with the name
         player = new Player(name);
         characterInfo();
+        Helper.gameLoop();
+
 
 		// start main game loop (next part)
 		//Helper.gameLoop();

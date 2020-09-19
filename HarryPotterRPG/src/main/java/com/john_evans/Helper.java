@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class Helper {
 	static Scanner scanner = new Scanner(System.in);
 	static Player player;
-	public static boolean isRunning;
+    public static boolean isRunning;
+    public static int place = 0, act;
+public static String[] places = {"Everlasting Mountains", "Haunted Landlines", "Castle of the Evil Emperor", "Throne Room"};
 
 	public static void gameLoop() {
 		while (isRunning) {
@@ -26,7 +28,7 @@ public class Helper {
 
 	public static void printMenu() {
 		clearConsole();
-		printHeading("places[place]");
+		printHeading(places[place]);
 		System.out.println("Choose an action:");
 		printSeperator(20);
 		System.out.println("(1) Continue on your journey");

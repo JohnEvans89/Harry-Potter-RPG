@@ -3,7 +3,6 @@ package com.john_evans;
 public class Player extends Character {
 
 	public int numAtkUpgrades, numDefUpgrades;
-//Helper h = new Helper(); 
 	public String[] atkUpgrades = { "Strength", "Power", "Might", "Gpdlike Strength" };
 	public String[] defUpgrades = { "Heavy Bones", "Stoneskin", "Scale Armor", "Holy Aura" };
 	public String school;
@@ -14,18 +13,16 @@ public class Player extends Character {
 		this.numDefUpgrades = 0;
         //chooseCountry();
         //Helper.characterInfo();
-		// TODO Auto-generated constructor stub
+
 	}
 
 	@Override
 	public int attack() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
 	public int defend() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
