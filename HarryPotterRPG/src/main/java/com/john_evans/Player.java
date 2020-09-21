@@ -44,22 +44,22 @@ public class Player extends Character {
 		if (input == 1) {
 			System.out.println("HOGWARTS");
 		}
-		if (input == 2) {
+		else if (input == 2) {
 			System.out.println("ILLVERMORNY");
 		}
-		if (input == 3) {
+		else if (input == 3) {
 			System.out.println("BEAUXBATONS");
 		}
-		if (input == 4) {
+		else if (input == 4) {
 			System.out.println("DURMSTRANG");
 		}
-		if (input == 5) {
+		else if (input == 5) {
 			System.out.println("CASTELOBROXO");
 		}
-		if (input == 6) {
+		else if (input == 6) {
 			System.out.println("UAGADOU");
 		}
-		if (input == 7) {
+		else if (input == 7) {
 			System.out.println("MAHOUTOKORO");
         }
         
