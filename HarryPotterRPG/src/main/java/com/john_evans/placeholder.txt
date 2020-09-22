@@ -1,1 +1,112 @@
-Git will not save empty directories, so this file is a placeholder to create the directory structure until the directory has contents.
+
+currency comversion
+
+-ublf jo b jou 
+
+--difdl uif uzqf 
+
+--if the 2 types are valid, make the conversion and update int account.  
+
+ 
+
+Check how the character/player are set up with attributes. Add a getter and setter for wallet. Figure out how often are students spending money. Is it just a niche thing at the start of term or will they need it thruout. I want to say the MacUSA is more modern than Hogwarts and would have wizarding banks with credit cards and modern tech...like pens.(research illvermorny-I might just make it like normal life, but more wizardy) 
+
+Maybe anythingToContibure is acting up becayse it’s void. 
+
+ 
+
+Start schools as an array of options. If brazil or africa, only leave the respective schools 
+
+Then check blood. If not pure, take durmstrang ff the list 
+
+ArayList String schools = new Array.asList(“H” , ”I” , “B” , “D” , “Af” , “Br”); 
+
+what are the remove methods for an array? Can you pick by name? Maybe a list. 
+
+ 
+
+List myList = new ArrayList(); or with generics ( Java 7 or later) List<MyType> myList = new ArrayList<>(); or with generics (Old java versions)... 
+
+List<String> messages = Arrays.asList("Hello", "Wo... 
+
+new ArrayList<String>(); 2. Arrays.asList("A", "B", "C") 
+
+ 
+
+I want blood status and location to effect the schools that will accept you. Durstrang will accept anyone with pure blood. Hogwarts will take anyone from the UK 
+
+For the sake of this converter, 
+1 Galleon = 5 Pounds,
+
+
+
+Dr=1.5*D 
+D=dr/1.5
+For the sake of this converter, 
+1 Dragot = 1.5 US Dollar. 
+ 
+There are 17 Sickles in a Galleon, 
+and 29 Knuts in a Sickle,
+ 
+ 2 United States Dollars = 5 Sickles and 6 Knuts
+ 1 United States Dollar = 2 Sickles and 18 Knuts
+
+1 Knut = 0.02 United States Dollars 
+1 Sickle = 0.38
+1 Galleon = 6.41 United States Dollars
+
+o=n/641
+
+I don’t think Illvermorny or bautaton have limitations. I guess in theory you could go to eaither if from england.  
+
+Should the first check be blood or location? 
+
+Write both 
+
+public void schoolOptions(){ 
+
+If(BR){ 
+
+Schools=BR 
+
+} 
+
+Else If(AFR){ 
+
+Return africa 
+
+} 
+
+How to phrase the blood status condition 
+
+Else if ( 
+
+ 
+
+int input; 
+
+int newMoney; 
+
+public int moneyChange(){ 
+
+Scanner scan = new Scanner (System.in); 
+
+sysout("What is your muggles currency?"); //this may not be necessary after the country code//US=$ UK=pound or euro, etc. 
+
+input=scan.nextInt; 
+
+//dummy conversion 
+
+newMoney=(input*2)/2; 
+
+return newMoney; 
+
+} 
+
+ 
+
+Default money to 0 at the start like HP/maxHP and XP 
+
+Player.wallet=newMoney; 
+
+ 

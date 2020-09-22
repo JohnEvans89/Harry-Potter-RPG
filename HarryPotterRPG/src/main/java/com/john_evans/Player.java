@@ -1,11 +1,15 @@
 package com.john_evans;
 
+import java.util.Scanner;
+
 public class Player extends Character {
 
 	public int numAtkUpgrades, numDefUpgrades;
 	public String[] atkUpgrades = { "Strength", "Power", "Might", "Gpdlike Strength" };
 	public String[] defUpgrades = { "Heavy Bones", "Stoneskin", "Scale Armor", "Holy Aura" };
-	public String school;
+    public String school;
+    Double newMoney;
+    Scanner scan = new Scanner (System.in); 
 
 	public Player(String name) {
 		super(name, 100, 0);
@@ -83,5 +87,34 @@ public class Player extends Character {
 		}
 		Helper.anythingToContinue();
 	}
+
+public void moneyChange(){ 
+    Helper.printHeading("What is your initial currency?"); 
+System.out.println("1. US Dollars");
+System.out.println("2. Dragots");
+int choice = Helper.readInt("-> ", 2);
+if(choice==1){
+    System.out.println("How much?");
+    Double input = scan.nextDouble();
+//dollars to dragot
+newMoney=input*1.5;
+System.out.println(newMoney); 
+}
+else{
+        System.out.println("How much?");
+    Double input = scan.nextDouble();
+//dollars to dragot
+newMoney=input/1.5;
+System.out.println(newMoney); 
+} 
+}
+ 
+
+// Default money to 0 at the 
+// start like HP/maxHP and XP 
+
+// Player.wallet=newMoney; 
+
+
 
 }
