@@ -1,9 +1,13 @@
-package com.john_evans;
+package com.john_evans.Schools;
 
 public abstract class School {
-    
+    public String name;
 
-    
+    public School(String name) {
+        this.name = name;
+    }
+    public abstract String sorting();
+        
 }
 
 
@@ -16,18 +20,3 @@ public abstract class School {
 // and demeanor. Certain traits exemplify certain houses. You may possess 
 // all the traits or strongly possess only one of them. The house descriptions are outlines 
 // for your character, but not definite facts.
-// public Player(String name) {
-// 		super(name, 100, 0);
-// 		this.numAtkUpgrades = 0;
-//         this.numDefUpgrades = 0;
-        
-// public abstract class Character {
-// //Variables / Attributes all characters have
-// 	public String name;
-// 	public int maxHp, hp, xp;
-// 	// Constructor for character
-// 	public Character(String name, int maxHp, int xp) {
-// 		this.name = name;		this.maxHp = maxHp;	this.xp = xp;		this.hp = maxHp;
-// 	}
-// 	// methods every character has
-// 	public abstract int attack();	public abstract int defend();
