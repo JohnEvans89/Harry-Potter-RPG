@@ -1,13 +1,22 @@
 package com.john_evans;
 
+import com.john_evans.Schools.Beauxbatons;
+import com.john_evans.Schools.Ilvermorny;
+
 //import java.util.Scanner;
 
 public class HPApp {
 
     
 	public static void main(String[] args) {
-        Player p= new Player("name");
-        p.moneyChange();
+        //Beauxbatons b = new Beauxbatons("name");
+        //b.sorting();
+        Ilvermorny i = new Ilvermorny("name");
+        i.sorting();
+
+        // Player p= new Player("name");
+        // p.moneyChange();
+
 // Scanner scan = new Scanner (System.in); 
 // Double newMoney;
 

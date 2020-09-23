@@ -4,13 +4,11 @@ public class Hogwarts extends School{
 
     public Hogwarts(String name) {
         super(name);
-        // TODO Auto-generated constructor stub
     }
 
     @Override
-    public String sorting() {
-        // TODO Auto-generated method stub
-        return null;
+    public void sorting() {
+        
     }
     
 }
