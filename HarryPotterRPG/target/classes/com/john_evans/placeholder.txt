@@ -55,6 +55,23 @@ and 29 Knuts in a Sickle,
 1 Sickle = 0.38
 1 Galleon = 6.41 United States Dollars
 
+“The gold ones are Galleons. 
+Seventeen silver Sickles to a Galleon and 
+twenty-nine Knuts to a Sickle, it's easy enough.”
+
+493
+
+1k=Dollars/.02
+while (K>=493){
+    G++
+    K-493
+}
+if(K>=29){
+    S++
+    K-29
+}
+
+
 o=n/641
 
 I don’t think Illvermorny or bautaton have limitations. I guess in theory you could go to eaither if from england.  

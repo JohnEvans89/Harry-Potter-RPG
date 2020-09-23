@@ -4,17 +4,19 @@ import java.util.Scanner;
 
 public class Player extends Character {
 
-	public int numAtkUpgrades, numDefUpgrades;
+	public int numAtkUpgrades, numDefUpgrades, wallet;
 	public String[] atkUpgrades = { "Strength", "Power", "Might", "Gpdlike Strength" };
 	public String[] defUpgrades = { "Heavy Bones", "Stoneskin", "Scale Armor", "Holy Aura" };
     public String school;
     Double newMoney;
+    int gall, sic, kn;
     Scanner scan = new Scanner (System.in); 
 
 	public Player(String name) {
 		super(name, 100, 0);
 		this.numAtkUpgrades = 0;
-		this.numDefUpgrades = 0;
+        this.numDefUpgrades = 0;
+        this.wallet=0;
         //chooseCountry();
         //Helper.characterInfo();
 
@@ -89,30 +91,42 @@ public class Player extends Character {
 	}
 
 public void moneyChange(){ 
-    Helper.printHeading("What is your initial currency?"); 
+Helper.printHeading("What is your initial currency?"); 
 System.out.println("1. US Dollars");
-System.out.println("2. Dragots");
-int choice = Helper.readInt("-> ", 2);
-if(choice==1){
-    System.out.println("How much?");
-    Double input = scan.nextDouble();
-//dollars to dragot
-newMoney=input*1.5;
-System.out.println(newMoney); 
-}
-else{
+System.out.println("2. Pounds Sterling");
+//int choice = Helper.readInt("-> ", 2);
+    System.out.println("What currency do you want to convert into?");
+    System.out.println("1. Dragots");
+    System.out.println("2. Galleons, Sickles, Knuts");
+    int subChoice = Helper.readInt("-> ", 2);
+        if(subChoice==1){   
         System.out.println("How much?");
-    Double input = scan.nextDouble();
+        Double input = scan.nextDouble();
+        newMoney=1.5*input; 
+        System.out.println(newMoney + " Dragots");
+        }
+        else{
+        System.out.println("How much?");
+        Double input = scan.nextDouble();
+        newMoney=input/.02;
+        System.out.println(newMoney);
+        while(newMoney>=493){
+            gall++;
+            newMoney-=493;
+        }
+        while(newMoney>=29){
+            sic++;
+            newMoney-=29;
+        }
+        System.out.println(gall + " Galleons");
+        System.out.println((sic + " Sickles"));
+        System.out.println(newMoney + " Knuts"); 
+        }
+    }
 //dollars to dragot
-newMoney=input/1.5;
-System.out.println(newMoney); 
-} 
-}
- 
-
+//newMoney=input*1.5;
 // Default money to 0 at the 
 // start like HP/maxHP and XP 
-
 // Player.wallet=newMoney; 
 
 

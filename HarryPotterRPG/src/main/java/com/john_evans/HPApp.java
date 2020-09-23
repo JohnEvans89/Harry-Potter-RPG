@@ -1,9 +1,10 @@
 package com.john_evans;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class HPApp {
 
+    
 	public static void main(String[] args) {
         Player p= new Player("name");
         p.moneyChange();
