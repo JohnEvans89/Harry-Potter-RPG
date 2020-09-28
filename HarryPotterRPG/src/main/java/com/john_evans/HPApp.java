@@ -14,7 +14,8 @@ public class HPApp {
         //Ilvermorny i = new Ilvermorny("name");
         //i.letter();
 Sortinh s = new Sortinh();
-s.sore();
+s.question1();
+s.question8();
         // Player p= new Player("name");
         // p.moneyChange();
 
