@@ -11,9 +11,10 @@ public class HPApp {
 	public static void main(String[] args) {
         //Beauxbatons b = new Beauxbatons("name");
         //b.sorting();
-        Ilvermorny i = new Ilvermorny("name");
-        i.sorting();
-
+        //Ilvermorny i = new Ilvermorny("name");
+        //i.letter();
+Sortinh s = new Sortinh();
+s.sore();
         // Player p= new Player("name");
         // p.moneyChange();
 
