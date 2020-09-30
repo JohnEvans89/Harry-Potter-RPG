@@ -1,5 +1,7 @@
 package com.john_evans;
 
+import com.john_evans.Schools.Beauxbatons;
+import com.john_evans.Schools.Ilvermorny;
 
 //import java.util.Scanner;
 
@@ -7,15 +9,16 @@ public class HPApp {
 
     
 	public static void main(String[] args) {
-        //Beauxbatons b = new Beauxbatons("name");
-        //b.sorting();
-        //Ilvermorny i = new Ilvermorny("name");
-        //i.letter();
+        Beauxbatons b = new Beauxbatons("name");
+        b.sorting();
+        Ilvermorny i = new Ilvermorny("name");
+        i.letter();
 Sortinh s = new Sortinh();
 s.question1();
+s.question7();
 s.question8();
-        // Player p= new Player("name");
-        // p.moneyChange();
+         Player p= new Player("name");
+        p.moneyChange();
 
 // Scanner scan = new Scanner (System.in); 
 // Double newMoney;

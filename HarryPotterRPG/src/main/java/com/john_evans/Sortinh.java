@@ -56,128 +56,108 @@ public class Sortinh {
         System.out.println("T:" + T);
     }
 
-public void question2(){
-    int Q2 = questionPick(1, 6);
+    public void question2() {
+        int Q2 = questionPick(1, 6);
         System.out.println("Q2");
-    if (Q2 == 1) {
-           System.out.println("I most value…");
+        if (Q2 == 1) {
+            System.out.println("I most value…");
             System.out.println("1. Freedom");
             System.out.println("2. Individuality");
             System.out.println("3. Service");
             System.out.println("4. Ambition");
             int input = Helper.readInt("-> ", 4);
             if (input == 1) {
+                T++;
+            } else if (input == 2) {
+                P++;
+            } else if (input == 3) {
                 H++;
+            } else if (input == 4) {
+                W++;
+            }
+        } else if (Q2 == 2) {
+            System.out.println("I would most like to discover…");
+            System.out.println("1. A powerful magical creature loyal only to me");
+            System.out.println("2. An all magical city hidden from the No-Maj world");
+            System.out.println("3. A spell more powerful than any other");
+            System.out.println("4. A magical plant that will cure any illness");
+            int input = Helper.readInt("-> ", 4);
+            if (input == 1) {
+                H++;
+            } else if (input == 2) {
+                P++;
+            } else if (input == 3) {
+                W++;
+            } else if (input == 4) {
+                T++;
+            }
+        } else if (Q2 == 3) {
+            System.out.println("I challenge…");
+            System.out.println("1. Authority");
+            System.out.println("2. Other people's patience");
+            System.out.println("3. Convention");
+            System.out.println("4. Myself");
+            int input = Helper.readInt("-> ", 4);
+            if (input == 1) {
                 W++;
             } else if (input == 2) {
                 P++;
+            } else if (input == 3) {
+                H++;
+            } else if (input == 4) {
                 T++;
-            }else if (input == 3) {
+            }
+        } else if (Q2 == 4) {
+            System.out.println("My greatest weakness is…");
+            System.out.println("1. Nobody's business but mine");
+            System.out.println("2. What makes me, me");
+            System.out.println("3. The source of my greatest strength");
+            System.out.println("4. Something I must change");
+            int input = Helper.readInt("-> ", 4);
+            if (input == 1) {
+                W++;
+            } else if (input == 2) {
                 P++;
+            } else if (input == 3) {
+                H++;
+            } else if (input == 4) {
                 T++;
-            }else if (input == 4) {
+            }
+        }else if (Q2 == 5) {
+            System.out.println("If I could I would never feel…");
+            System.out.println("1. Pain");
+            System.out.println("2. Fear");
+            System.out.println("3. Regret");
+            System.out.println("4. Shame");
+            int input = Helper.readInt("-> ", 4);
+            if (input == 1) {
+                H++;
+            } else if (input == 2) {
+                W++;
+            } else if (input == 3) {
+                T++;
+            } else if (input == 4) {
                 P++;
+            }
+        }
+        else if (Q2 == 6) {
+            System.out.println("A soulmate is...");
+            System.out.println("1. Out there somewhere");
+            System.out.println("2. An illusion");
+            System.out.println("3. A psychic twin");
+            System.out.println("4. Strong where I'm weak, weak where I'm strong");
+            int input = Helper.readInt("-> ", 4);
+            if (input == 1) {
+                P++;
+            } else if (input == 2) {
+                W++;
+            } else if (input == 3) {
+                H++;
+            } else if (input == 4) {
                 T++;
             }
         }
-If (choice== freedom){T++:} 
-
-If (choice== individuality){P++:} 
-
-If (choice== service){H++;} 
-
-If (choice== Ambition){W++;} 
     }
-
-2.2 I would most like to discover… 
-
-a powerful magical creature loyal only to me 
-
-an all magical city hidden from the No-Maj world 
-
-a spell more powerful than any other 
-
-a magical plant that will cure any illness 
-
-If (choice== a powerful magical creature loyal only to me) {H++;} 
-
-If (choice== an all magical city hidden from the No-Maj world) {P++;} 
-
-If (choice== a spell more powerful than any other) {W++;} 
-
-If (choice== a magical plant that will cure any illness) {T++;} 
-
-2.3 I challenge… 
-
-authority 
-
-other people's patience 
-
-convention 
-
-Myself 
-
-If (choice== Convention) {H++;} 
-
-If (choice== Other people's patience) {P++;} 
-
-If (choice== Authority) {W++;} 
-
-If (choice== Myself) {T++;} 
-
-2.4 My greatest weakness is… 
-
-nobody's business but mine 
-
-what makes me, me 
-
-the source of my greatest strength 
-
-something I must change 
-
-If (choice== The source of my greatest strength) {H++;} 
-
-If (choice== What makes me, me) {P++;} 
-
-If (choice== Nobody's business but mine) {W++;} 
-
-If (choice== Something I must change) {T++;} 
-
-2.5 If I could I would never feel… 
-
-pain 
-
-fear 
-
-regret 
-
-Shame 
-
-If (choice== pain) {H++;} 
-
-If (choice== Shame) {P++;} 
-
-If (choice== fear) {W++;} 
-
-If (choice== regret) {T++;} 
-
-2.6 A soulmate is... 
-
-out there somewhere 
-
-an illusion 
-
-a psychic twin 
-
-strong where I'm weak, weak where I'm strong 
-
-If (choice== a psychic twin) {H++;} 
-
-If (choice== out there somewhere) {P++;} 
-
-If (choice== an illusion) {W++;} 
-
-If (choice== strong where I'm weak, weak where I'm strong) {T++;} }
 
     public void question7() {
         System.out.println("Q7");
