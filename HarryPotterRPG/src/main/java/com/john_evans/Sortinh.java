@@ -159,6 +159,120 @@ public class Sortinh {
         }
     }
 
+
+public void question5() {
+        int Q5 = questionPick(1, 3);
+        System.out.println("Q5");
+        if (Q5 == 1) {
+            System.out.println("What jinx would you least like to experience?");
+            System.out.println("1. A jinx that meant nothing was funny");
+            System.out.println("2. A jinx that made all food taste like straw");
+            System.out.println("3. A jinx that kept you constantly awake");
+            System.out.println("4. A jinx that played music constantly in your head");
+            System.out.println("5. A jinx that struck you dumb");
+            System.out.println("6. A jinx that forced you to tell the truth");
+            int input = Helper.readInt("-> ", 6);
+            if (input == 1) {
+                T=T+2;
+            } else if (input == 2) {
+                P++;
+                W++;
+            } else if (input == 3) {
+                H=H+2;
+            } else if (input == 4) {
+                T++;
+                H++;
+            } else if (input ==5){
+                P=P+2;
+            }else if (input ==6){
+                W=W+2;
+            }
+        }
+
+
+
+    public void question6() {
+        int Q6 = questionPick(1, 3);
+        System.out.println("Q6");
+        if (Q6 == 1) {
+            System.out.println("What jinx would you least like to experience?");
+            System.out.println("1. A jinx that meant nothing was funny");
+            System.out.println("2. A jinx that made all food taste like straw");
+            System.out.println("3. A jinx that kept you constantly awake");
+            System.out.println("4. A jinx that played music constantly in your head");
+            System.out.println("5. A jinx that struck you dumb");
+            System.out.println("6. A jinx that forced you to tell the truth");
+            int input = Helper.readInt("-> ", 6);
+            if (input == 1) {
+                T=T+2;
+            } else if (input == 2) {
+                P++;
+                W++;
+            } else if (input == 3) {
+                H=H+2;
+            } else if (input == 4) {
+                T++;
+                H++;
+            } else if (input ==5){
+                P=P+2;
+            }else if (input ==6){
+                W=W+2;
+            }
+        }
+    else if (Q6 == 2) {
+            System.out.println("Which would you choose if you could only have one?");
+            System.out.println("1. The power to change one day in your future");
+            System.out.println("2. The power to change one day in your past");
+            System.out.println("3. The power to make one person impervious to harm");
+            System.out.println("4. The power to bring one person back from the dead");
+            System.out.println("5. The power to cure one illness worldwide");
+            System.out.println("6. The power to eradicate one quality from all humans");
+            System.out.println("7. The power to know the answer to any single question");
+            int input = Helper.readInt("-> ", 7);
+            if (input == 1) {
+                T=T+2;
+            } else if (input == 2) {
+                P++;
+            } else if (input == 3) {
+                P=P+2;
+            } else if (input == 4) {
+                H++;
+            }else if (input == 5) {
+                T++;
+            }else if (input == 6) {
+                W=W+2;
+            }else if (input == 7) {
+                W++;
+                H=H+2;
+            }
+        }else if (Q6 == 3) {
+            System.out.println("Where would you least like to find yourself?");
+            System.out.println("1. Imprisoned alone in a silent dungeon");
+            System.out.println("2. Locked in a crowded cage, standing room only");
+            System.out.println("3. In the dock in court, accused of a crime you did not commit");
+            System.out.println("4. On the deck of a ship as the tidal wave comes over the horizon");
+            System.out.println("5. Trapped in the attic as the house burns below you");
+            System.out.println("6. On the rope bridge fraying over the canyon");
+            System.out.println("7. Lost in the forest at night, eyes staring at you through the dark");
+            int input = Helper.readInt("-> ", 7);
+            if (input == 1) {
+                P=P+2;
+            } else if (input == 2) {
+                T=T+2;
+                H++;
+            } else if (input == 3) {
+                P++;
+            } else if (input == 4) {
+                W++;
+            }else if (input == 5) {
+                W=W+2;
+            }else if (input == 6) {
+                H=H+2;
+            }else if (input == 7) {
+                T++;
+            }
+        }
+    }
     public void question7() {
         System.out.println("Q7");
         System.out.println("Think of the question you would most like answered, by a person or an all-knowing being or device. Which of the following most closely resembles the answer you'd like to hear?");
@@ -221,7 +335,6 @@ public class Sortinh {
         System.out.println("T:" + T);
 
     }
-
     public void question8() {
         int Q8 = questionPick(1, 3);
         System.out.println("Q8");
