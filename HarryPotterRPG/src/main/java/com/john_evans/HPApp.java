@@ -9,10 +9,10 @@ public class HPApp {
 
     
 	public static void main(String[] args) {
-        Beauxbatons b = new Beauxbatons("name");
-        b.sorting();
-        Ilvermorny i = new Ilvermorny("name");
-        i.letter();
+        // Beauxbatons b = new Beauxbatons("name");
+        // b.sorting();
+        // Ilvermorny i = new Ilvermorny("name");
+        // i.letter();
 Sortinh s = new Sortinh();
 s.question1();
 s.question7();

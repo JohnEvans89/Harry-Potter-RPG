@@ -55,7 +55,6 @@ public class Sortinh {
         System.out.println("W:" + W);
         System.out.println("T:" + T);
     }
-
     public void question2() {
         int Q2 = questionPick(1, 6);
         System.out.println("Q2");
@@ -123,7 +122,7 @@ public class Sortinh {
             } else if (input == 4) {
                 T++;
             }
-        }else if (Q2 == 5) {
+        } else if (Q2 == 5) {
             System.out.println("If I could I would never feel…");
             System.out.println("1. Pain");
             System.out.println("2. Fear");
@@ -139,8 +138,7 @@ public class Sortinh {
             } else if (input == 4) {
                 P++;
             }
-        }
-        else if (Q2 == 6) {
+        } else if (Q2 == 6) {
             System.out.println("A soulmate is...");
             System.out.println("1. Out there somewhere");
             System.out.println("2. An illusion");
@@ -158,39 +156,237 @@ public class Sortinh {
             }
         }
     }
-
-
-public void question5() {
-        int Q5 = questionPick(1, 3);
-        System.out.println("Q5");
-        if (Q5 == 1) {
-            System.out.println("What jinx would you least like to experience?");
-            System.out.println("1. A jinx that meant nothing was funny");
-            System.out.println("2. A jinx that made all food taste like straw");
-            System.out.println("3. A jinx that kept you constantly awake");
-            System.out.println("4. A jinx that played music constantly in your head");
-            System.out.println("5. A jinx that struck you dumb");
-            System.out.println("6. A jinx that forced you to tell the truth");
-            int input = Helper.readInt("-> ", 6);
+    public void question3() {
+        int Q3 = questionPick(1, 5);
+        System.out.println("Q3");
+        if (Q3 == 1) {
+            System.out.println("My beliefs are…");
+            System.out.println("1. Hard won");
+            System.out.println("2. Who I am");
+            System.out.println("3. Constantly evolving");
+            System.out.println("4. Few but strong bb");
+            int input = Helper.readInt("-> ", 4);
             if (input == 1) {
-                T=T+2;
+                W++;
             } else if (input == 2) {
                 P++;
-                W++;
             } else if (input == 3) {
-                H=H+2;
+                H++;
             } else if (input == 4) {
                 T++;
+            }
+        } else if (Q3 == 2) {
+            System.out.println("My best ideas…");
+            System.out.println("1. Get me in trouble");
+            System.out.println("2. Aren't appreciated enough");
+            System.out.println("3. Have changed my life");
+            System.out.println("4. Have gone to waste");
+            int input = Helper.readInt("-> ", 4);
+            if (input == 1) {
+                W++;
+            } else if (input == 2) {
+                P++;
+            } else if (input == 3) {
+                T++;
+            } else if (input == 4) {
                 H++;
-            } else if (input ==5){
-                P=P+2;
-            }else if (input ==6){
-                W=W+2;
+            }
+        } else if (Q3 == 3) {
+            System.out.println("Why?");
+            System.out.println("1. Why not?");
+            System.out.println("2. Because I want to");
+            System.out.println("3. Stupid question");
+            System.out.println("4. We may never know");
+            int input = Helper.readInt("-> ", 4);
+            if (input == 1) {
+                H++;
+            } else if (input == 2) {
+                W++;
+            } else if (input == 3) {
+                P++;
+            } else if (input == 4) {
+                T++;
+            }
+        } else if (Q3 == 4) {
+            System.out.println("All I need is…");
+            System.out.println("1. An opportunity");
+            System.out.println("2. A little more time");
+            System.out.println("3. Some help");
+            System.out.println("4. Already inside me");
+            int input = Helper.readInt("-> ", 4);
+            if (input == 1) {
+                T++;
+            } else if (input == 2) {
+                H++;
+            } else if (input == 3) {
+                P++;
+            } else if (input == 4) {
+                W++;
+            }
+        } else if (Q3 == 5) {
+            System.out.println("I often think…");
+            System.out.println("1. Why did I do that?");
+            System.out.println("2. Why can't I do that?");
+            System.out.println("3. I wish I had done that");
+            System.out.println("4. I wonder whether I should do that");
+            int input = Helper.readInt("-> ", 4);
+            if (input == 1) {
+                H++;
+            } else if (input == 2) {
+                W++;
+            } else if (input == 3) {
+                T++;
+            } else if (input == 4) {
+                P++;
+            }
+        }
+    }
+    public void question4() {
+        int Q4 = questionPick(1, 4);
+        System.out.println("Q4");
+        if (Q4 == 1) {
+            System.out.println("What would you exchange for your heart's desire?");
+            System.out.println("1. Anything");
+            System.out.println("2. That which I can afford to lose");
+            System.out.println("3. Blood, sweat and tears");
+            System.out.println("4. What it is worth");
+            int input = Helper.readInt("-> ", 4);
+            if (input == 1) {
+                W++;
+            } else if (input == 2) {
+                P++;
+            } else if (input == 3) {
+                H++;
+            } else if (input == 4) {
+                T++;
+            }
+        } else if (Q4 == 2) {
+            System.out.println("I wish I knew how to…");
+            System.out.println("1. Forget");
+            System.out.println("2. Win");
+            System.out.println("3. Escape");
+            System.out.println("4. Get through");
+            int input = Helper.readInt("-> ", 4);
+            if (input == 1) {
+                H++;
+            } else if (input == 2) {
+                W++;
+            } else if (input == 3) {
+                T++;
+            } else if (input == 4) {
+                P++;
+            }
+        } else if (Q4 == 3) {
+            System.out.println("My magic is…");
+            System.out.println("1. Inborn");
+            System.out.println("2. In need of work");
+            System.out.println("3. Unique");
+            System.out.println("4. Powerful");
+            int input = Helper.readInt("-> ", 4);
+            if (input == 1) {
+                W++;
+            } else if (input == 2) {
+                P++;
+            } else if (input == 3) {
+                H++;
+            } else if (input == 4) {
+                T++;
+            }
+        } else if (Q4 == 4) {
+            System.out.println("When will I learn…");
+            System.out.println("1. To keep my mouth shut");
+            System.out.println("2. To say no");
+            System.out.println("3. To do things on time");
+            System.out.println("4. The secret");
+            int input = Helper.readInt("-> ", 4);
+            if (input == 1) {
+                P++;
+            } else if (input == 2) {
+                T++;
+            } else if (input == 3) {
+                W++;
+            } else if (input == 4) {
+                H++;
             }
         }
 
 
+    }
+    public void question5() {
+        int Q5 = questionPick(1, 3);
+        System.out.println("Q5");
+        if (Q5 == 1) {
+            System.out.println("I am strongest when…");
+            System.out.println("1. I know I'm right");
+            System.out.println("2. With my comrades");
+            System.out.println("3. Enthusiastic");
+            System.out.println("4. Awake");
+            System.out.println("5. Alone");
+            int input = Helper.readInt("-> ", 5);
+            if (input == 1) {
+                H = H + 2;
+            } else if (input == 2) {
+                P = P + 2;
+            } else if (input == 3) {
+                P++;
+                W++;
+            } else if (input == 4) {
+                W = W + 2;
+            } else if (input == 5) {
+                T = T + 2;
+                H++;
+            }
+        } else if (Q5 == 2) {
+            System.out.println("What would you least like to lose?");
+            System.out.println("1. Reputaion");
+            System.out.println("2. Health");
+            System.out.println("3. Luck");
+            System.out.println("4. Dreams");
+            System.out.println("5. Love");
+            System.out.println("6. Hope");
+            int input = Helper.readInt("-> ", 6);
+            if (input == 1) {
+                H++;
+                W++;
+            } else if (input == 2) {
+                P = P + 2;
+            } else if (input == 3) {
+                H = H + 2;
+            } else if (input == 4) {
+                T = T + 2;
+            } else if (input == 5) {
+                P++;
+            } else if (input == 6) {
+                W = W + 2;
+                T++;
+            }
+        } else if (Q5 == 3) {
+            System.out.println("Whose judgement do you most fear?");
+            System.out.println("1. Nobody's");
+            System.out.println("2. My own");
+            System.out.println("3. My friends'");
+            System.out.println("4. My family's");
+            System.out.println("5. The world's");
+            System.out.println("6. History's");
+            int input = Helper.readInt("-> ", 6);
+            if (input == 1) {
+                W = W + 2;
+            } else if (input == 2) {
+                H++;
+                T++;
+            } else if (input == 3) {
+                P = P + 2;
+            } else if (input == 4) {
+                P++;
+            } else if (input == 5) {
+                T = T + 2;
+            } else if (input == 6) {
+                H = H + 2;
+                W++;
+            }
+        }
 
+    }
     public void question6() {
         int Q6 = questionPick(1, 3);
         System.out.println("Q6");
@@ -204,22 +400,21 @@ public void question5() {
             System.out.println("6. A jinx that forced you to tell the truth");
             int input = Helper.readInt("-> ", 6);
             if (input == 1) {
-                T=T+2;
+                T = T + 2;
             } else if (input == 2) {
                 P++;
                 W++;
             } else if (input == 3) {
-                H=H+2;
+                H = H + 2;
             } else if (input == 4) {
                 T++;
                 H++;
-            } else if (input ==5){
-                P=P+2;
-            }else if (input ==6){
-                W=W+2;
+            } else if (input == 5) {
+                P = P + 2;
+            } else if (input == 6) {
+                W = W + 2;
             }
-        }
-    else if (Q6 == 2) {
+        } else if (Q6 == 2) {
             System.out.println("Which would you choose if you could only have one?");
             System.out.println("1. The power to change one day in your future");
             System.out.println("2. The power to change one day in your past");
@@ -230,22 +425,22 @@ public void question5() {
             System.out.println("7. The power to know the answer to any single question");
             int input = Helper.readInt("-> ", 7);
             if (input == 1) {
-                T=T+2;
+                T = T + 2;
             } else if (input == 2) {
                 P++;
             } else if (input == 3) {
-                P=P+2;
+                P = P + 2;
             } else if (input == 4) {
                 H++;
-            }else if (input == 5) {
+            } else if (input == 5) {
                 T++;
-            }else if (input == 6) {
-                W=W+2;
-            }else if (input == 7) {
+            } else if (input == 6) {
+                W = W + 2;
+            } else if (input == 7) {
                 W++;
-                H=H+2;
+                H = H + 2;
             }
-        }else if (Q6 == 3) {
+        } else if (Q6 == 3) {
             System.out.println("Where would you least like to find yourself?");
             System.out.println("1. Imprisoned alone in a silent dungeon");
             System.out.println("2. Locked in a crowded cage, standing room only");
@@ -256,26 +451,26 @@ public void question5() {
             System.out.println("7. Lost in the forest at night, eyes staring at you through the dark");
             int input = Helper.readInt("-> ", 7);
             if (input == 1) {
-                P=P+2;
+                P = P + 2;
             } else if (input == 2) {
-                T=T+2;
+                T = T + 2;
                 H++;
             } else if (input == 3) {
                 P++;
             } else if (input == 4) {
                 W++;
-            }else if (input == 5) {
-                W=W+2;
-            }else if (input == 6) {
-                H=H+2;
-            }else if (input == 7) {
+            } else if (input == 5) {
+                W = W + 2;
+            } else if (input == 6) {
+                H = H + 2;
+            } else if (input == 7) {
                 T++;
             }
         }
     }
     public void question7() {
         System.out.println("Q7");
-        System.out.println("Think of the question you would most like answered, by a person or an all-knowing being or device. Which of the following most closely resembles the answer you'd like to hear?");
+        System.out.println("Think of the question you would most like answered, \r\nby a person or an all-knowing being or device. \r\nWhich of the following most closely resembles \r\nthe answer you'd like to hear?");
         System.out.println("1. Without a shadow of a doubt");
         System.out.println("2. Never");
         System.out.println("3. Very soon");
