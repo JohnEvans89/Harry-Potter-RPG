@@ -155,6 +155,10 @@ public class Sortinh {
                 T++;
             }
         }
+          System.out.println("P:" + P);
+        System.out.println("H:" + H);
+        System.out.println("W:" + W);
+        System.out.println("T:" + T);
     }
     public void question3() {
         int Q3 = questionPick(1, 5);
@@ -240,6 +244,10 @@ public class Sortinh {
                 P++;
             }
         }
+          System.out.println("P:" + P);
+        System.out.println("H:" + H);
+        System.out.println("W:" + W);
+        System.out.println("T:" + T);
     }
     public void question4() {
         int Q4 = questionPick(1, 4);
@@ -310,6 +318,10 @@ public class Sortinh {
             }
         }
 
+          System.out.println("P:" + P);
+        System.out.println("H:" + H);
+        System.out.println("W:" + W);
+        System.out.println("T:" + T);
 
     }
     public void question5() {
@@ -385,7 +397,10 @@ public class Sortinh {
                 W++;
             }
         }
-
+  System.out.println("P:" + P);
+        System.out.println("H:" + H);
+        System.out.println("W:" + W);
+        System.out.println("T:" + T);
     }
     public void question6() {
         int Q6 = questionPick(1, 3);
@@ -467,6 +482,10 @@ public class Sortinh {
                 T++;
             }
         }
+     System.out.println("P:" + P);
+        System.out.println("H:" + H);
+        System.out.println("W:" + W);
+        System.out.println("T:" + T);
     }
     public void question7() {
         System.out.println("Q7");
