@@ -1,6 +1,6 @@
 package com.john_evans;
 
-public class Sortinh {
+public class Sorting {
 
     int H = 0;
     int W = 0;
@@ -564,13 +564,95 @@ public class Sortinh {
                 W++;
             }
         }
+    
+    }
+
+public void results(){
+if(P==H && P > W && P > T){
+    System.out.println("House Stall");
+       System.out.println("Which House would you like to join?");
+            System.out.println("1. Pukwudgie");
+            System.out.println("2. Horned Serpent");
+            int input = Helper.readInt("-> ", 2);
+            if (input == 1) {
+                System.out.println("Welcome to Pukwudgie");
+            } else if (input == 2) {
+                System.out.println("Welcome to Horned Serpent");
+            }
+}
+else if(P==W && P > H && P > T){
+    System.out.println("House Stall");
+       System.out.println("Which House would you like to join?");
+            System.out.println("1. Pukwudgie");
+            System.out.println("2. Wampus");
+            int input = Helper.readInt("-> ", 2);
+            if (input == 1) {
+                System.out.println("Welcome to Pukwudgie");
+            } else if (input == 2) {
+                System.out.println("Welcome to Wampus");
+            }
+}
+
+else if(P==T && P > H && P > W){
+     System.out.println("House Stall");
+       System.out.println("Which House would you like to join?");
+            System.out.println("1. Pukwudgie");
+            System.out.println("2. Thunderbird");
+            int input = Helper.readInt("-> ", 2);
+            if (input == 1) {
+                System.out.println("Welcome to Pukwudgie");
+            } else if (input == 2) {
+                System.out.println("Welcome to Thunderbird");
+            }
+}
+
+else if(H==W && H > T && H > P){
+
+    System.out.println("House Stall");
+       System.out.println("Which House would you like to join?");
+            System.out.println("1. Horned Serpent");
+            System.out.println("2. Wampus");
+            int input = Helper.readInt("-> ", 2);
+            if (input == 1) {
+                System.out.println("Welcome to Horned Serpent");
+            } else if (input == 2) {
+                System.out.println("Welcome to Wampus");
+            }
+}
+
+else if(H==T && H > W && H > P){
+        System.out.println("House Stall");
+       System.out.println("Which House would you like to join?");
+            System.out.println("1. Horned Serpent");
+            System.out.println("2. Thunderbird");
+            int input = Helper.readInt("-> ", 2);
+            if (input == 1) {
+                System.out.println("Welcome to Horned Serpent");
+            } else if (input == 2) {
+                System.out.println("Welcome to Thunderbird");
+            }
+
+}
+
+else if(W==T && W > H && W > P){
+    System.out.println("House Stall");
+       System.out.println("Which House would you like to join?");
+            System.out.println("1. Wampus");
+            System.out.println("2. Thunderbird");
+            int input = Helper.readInt("-> ", 2);
+            if (input == 1) {
+                System.out.println("Welcome to Wampus");
+            } else if (input == 2) {
+                System.out.println("Welcome to Thunderbird");
+            }
+
+}
+
         System.out.println("P:" + P);
         System.out.println("H:" + H);
         System.out.println("W:" + W);
         System.out.println("T:" + T);
-    }
-
-
+}
 
 
 }

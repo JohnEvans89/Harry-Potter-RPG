@@ -1,7 +1,8 @@
 package com.john_evans.Schools;
 
 import com.john_evans.Helper;
-import com.john_evans.Sortinh;
+import com.john_evans.Sorting;
+import com.john_evans.Sorting;
 
 public class Ilvermorny extends School {
     public Ilvermorny(String name) {
@@ -30,7 +31,7 @@ public class Ilvermorny extends School {
         //     choice= "Thunderbird";
         // }
         // System.out.println(choice);
-Sortinh s=new Sortinh();
+Sorting s=new Sorting();
 s.question1();
 s.question2();
 s.question3();
@@ -39,7 +40,7 @@ s.question5();
 s.question6();
 s.question7();
 s.question8();
-
+s.results();
 
     }
     
