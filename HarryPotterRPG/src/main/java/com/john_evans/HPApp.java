@@ -11,14 +11,15 @@ public class HPApp {
 	public static void main(String[] args) {
         // Beauxbatons b = new Beauxbatons("name");
         // b.sorting();
-        // Ilvermorny i = new Ilvermorny("name");
-        // i.letter();
-Sortinh s = new Sortinh();
-s.question1();
-s.question7();
-s.question8();
-         Player p= new Player("name");
-        p.moneyChange();
+         Ilvermorny i = new Ilvermorny("name");
+   i.sorting();
+         // i.letter();
+// Sortinh s = new Sortinh();
+// s.question1();
+// s.question7();
+// s.question8();
+//          Player p= new Player("name");
+//         p.moneyChange();
 
 // Scanner scan = new Scanner (System.in); 
 // Double newMoney;

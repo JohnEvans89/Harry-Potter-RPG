@@ -1,6 +1,7 @@
 package com.john_evans.Schools;
 
 import com.john_evans.Helper;
+import com.john_evans.Sortinh;
 
 public class Ilvermorny extends School {
     public Ilvermorny(String name) {
@@ -9,26 +10,37 @@ public class Ilvermorny extends School {
 
     @Override
     public void sorting() {     
-        String choice="";
-        System.out.println("What is the most important aspect to be a successful witch or wizard?");
-        System.out.println("1. An explorative mind");
-        System.out.println("2. A strong body");
-        System.out.println("3. A beating heart");
-        System.out.println("4. An adventurous soul");
-        int input = Helper.readInt("-> ", 4);
-        if(input==1){
-            choice= "Horned Serpent";
-        }
-        else if (input==2){
-            choice= "Wampus";
-        }
-        else if (input==3){
-            choice= "Pukwudgie";
-        }
-        else if (input==4){
-            choice= "Thunderbird";
-        }
-        System.out.println(choice);
+        // String choice="";
+        // System.out.println("What is the most important aspect to be a successful witch or wizard?");
+        // System.out.println("1. An explorative mind");
+        // System.out.println("2. A strong body");
+        // System.out.println("3. A beating heart");
+        // System.out.println("4. An adventurous soul");
+        // int input = Helper.readInt("-> ", 4);
+        // if(input==1){
+        //     choice= "Horned Serpent";
+        // }
+        // else if (input==2){
+        //     choice= "Wampus";
+        // }
+        // else if (input==3){
+        //     choice= "Pukwudgie";
+        // }
+        // else if (input==4){
+        //     choice= "Thunderbird";
+        // }
+        // System.out.println(choice);
+Sortinh s=new Sortinh();
+s.question1();
+s.question2();
+s.question3();
+s.question4();
+s.question5();
+s.question6();
+s.question7();
+s.question8();
+
+
     }
     
 public void letter(){ 
