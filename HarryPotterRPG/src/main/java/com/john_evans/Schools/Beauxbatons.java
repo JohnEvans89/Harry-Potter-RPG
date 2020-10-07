@@ -4,8 +4,8 @@ import com.john_evans.Helper;
 
 public class Beauxbatons extends School{
 
-    public Beauxbatons(String name) {
-        super(name);
+    public Beauxbatons(String house) {
+        super(house);
     }
 
     @Override
