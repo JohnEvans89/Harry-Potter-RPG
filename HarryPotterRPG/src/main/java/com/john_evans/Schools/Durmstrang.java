@@ -1,14 +1,14 @@
 package com.john_evans.Schools;
 
-public class Durmstrang extends School{
- 
-      public Durmstrang(String house) {
-        super(house);
-    }
+public class Durmstrang extends School {
 
-    @Override
-    public void sorting() {
-        
-    }
+	public Durmstrang(String house) {
+		super(house);
+	}
+
+	@Override
+	public void sorting() {
+
+	}
 
 }
