@@ -577,7 +577,16 @@ public class Sorting {
 	}
 
 	public void results() {
-		if (P == H && P > W && P > T) {
+		if (P > H && P > W && P > T) {
+			System.out.println("Welcome to Pukwudgie");
+		} else if (H > P && H > W && H > T) {
+			System.out.println("Welcome to Horned Serpent");
+		} else if (W > H && W > P && W > T) {
+			System.out.println("Welcome to Wampus");
+		} else if (T > H && T > W && T > P) {
+			System.out.println("Welcome to Thunderbird");
+		}
+		else if (P == H && P > W && P > T) {
 			System.out.println("House Stall");
 			System.out.println("Which House would you like to join?");
 			System.out.println("1. Pukwudgie");
