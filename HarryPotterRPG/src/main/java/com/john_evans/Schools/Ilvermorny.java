@@ -10,18 +10,24 @@ public class Ilvermorny extends School {
 
 	@Override
 	public void sorting() {
-
 		Sorting s = new Sorting();
 		s.question1();
+		Helper.clearConsole();
 		s.question2();
+		Helper.clearConsole();
 		s.question3();
+		Helper.clearConsole();
 		s.question4();
+		Helper.clearConsole();
 		s.question5();
+		Helper.clearConsole();
 		s.question6();
+		Helper.clearConsole();
 		s.question7();
+		Helper.clearConsole();
 		s.question8();
+		Helper.clearConsole();
 		s.results();
-
 	}
 
 	public void letter() {

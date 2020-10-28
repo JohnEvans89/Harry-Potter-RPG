@@ -14,8 +14,8 @@ public class Story {
 		Helper.clearConsole();
 		Helper.printSeperator(40);
 		Helper.printSeperator(30);
-		System.out.println("AGE OF THE EVIL EMPEROR");
-		System.out.println("TEXT RPG BY FRED FOR CODESTUDENT.NET");
+		System.out.println("AMERICAN WIZARD");
+		System.out.println("TEXT RPG BY JOHN");
 		Helper.printSeperator(30);
 		Helper.printSeperator(40);
 		Helper.anythingToContinue();
