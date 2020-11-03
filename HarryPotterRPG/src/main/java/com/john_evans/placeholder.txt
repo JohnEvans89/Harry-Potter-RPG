@@ -10,9 +10,6 @@ currency comversion
  
 
 Check how the character/player are set up with attributes. Add a getter and setter for wallet. Figure out how often are students spending money. Is it just a niche thing at the start of term or will they need it thruout. I want to say the MacUSA is more modern than Hogwarts and would have wizarding banks with credit cards and modern tech...like pens.(research illvermorny-I might just make it like normal life, but more wizardy) 
-
-Maybe anythingToContibure is acting up becayse it’s void. 
-
  
 
 Start schools as an array of options. If brazil or africa, only leave the respective schools 

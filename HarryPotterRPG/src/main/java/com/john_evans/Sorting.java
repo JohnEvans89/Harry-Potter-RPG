@@ -6,7 +6,7 @@ public class Sorting {
 	int W = 0;
 	int T = 0;
 	int P = 0;
-	String house="";
+	String house = "";
 
 	public int questionPick(int min, int max) {
 		return (int) (Math.random() * (max - min + 1) + min);
@@ -579,15 +579,14 @@ public class Sorting {
 
 	public void results() {
 		if (P > H && P > W && P > T) {
-			house="P";
+			house = "P";
 		} else if (H > P && H > W && H > T) {
-			house="H";
+			house = "H";
 		} else if (W > H && W > P && W > T) {
-			house="W";
+			house = "W";
 		} else if (T > H && T > W && T > P) {
-			house="T";
-		}
-		else if (P == H && P > W && P > T) {
+			house = "T";
+		} else if (P == H && P > W && P > T) {
 			System.out.println("House Stall");
 			System.out.println("Which House would you like to join?");
 			System.out.println("1. Pukwudgie");
@@ -662,7 +661,7 @@ public class Sorting {
 		System.out.println("H:" + H);
 		System.out.println("W:" + W);
 		System.out.println("T:" + T);
-		 
+
 	}
 
 }

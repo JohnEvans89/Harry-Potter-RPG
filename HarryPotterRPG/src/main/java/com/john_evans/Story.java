@@ -2,6 +2,8 @@ package com.john_evans;
 
 import java.util.Scanner;
 
+import com.john_evans.Schools.Ilvermorny;
+
 public class Story {
 	static Player player;
 	static Scanner scanner = new Scanner(System.in);
@@ -39,33 +41,12 @@ public class Story {
 
 		// create new player object with the name
 		player = new Player(name);
-		characterInfo();
-		Helper.gameLoop();
+		Ilvermorny i = new Ilvermorny("P");
+		i.letter(player.name);
 
+		// characterInfo();
 		// start main game loop (next part)
 		// Helper.gameLoop();
-	}
-
-	public static void characterInfo() {
-		Helper.clearConsole();
-		Helper.printHeading("CHARACTER INFO");
-		System.out.println(player.name + "\tHP: " + player.hp + "/" + player.maxHp);
-		Helper.printSeperator(20);
-		System.out.println("XP: " + player.xp);
-		Helper.printSeperator(20);
-
-		// // printing the chosen traits
-		// if (player.numAtkUpgrades > 0) {
-		// System.out.println("Offensive trait: " +
-		// player.atkUpgrades[player.numAtkUpgrades - 1]);
-		// printSeperator(20);
-		// }
-		// if (player.numDefUpgrades > 0) {
-		// System.out.println("Defensive trait: " +
-		// player.defUpgrades[player.numDefUpgrades - 1]);
-		// }
-
-		Helper.anythingToContinue();
 	}
 
 }

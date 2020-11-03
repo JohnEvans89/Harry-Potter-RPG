@@ -5,9 +5,6 @@ import java.util.Scanner;
 public class Player extends Character {
 
 	public int numAtkUpgrades, numDefUpgrades, wallet;
-	public String[] atkUpgrades = { "Strength", "Power", "Might", "Gpdlike Strength" };
-	public String[] defUpgrades = { "Heavy Bones", "Stoneskin", "Scale Armor", "Holy Aura" };
-	public String school;
 	Double newMoney;
 	int gall, sic, kn;
 	Scanner scan = new Scanner(System.in);
@@ -63,24 +60,6 @@ public class Player extends Character {
 
 	}
 
-	public void chooseTrait() {
-		Helper.clearConsole();
-		Helper.printHeading("Choose a trait:");
-		System.out.println("(1) " + atkUpgrades[numAtkUpgrades]);
-		System.out.println("(2) " + defUpgrades[numDefUpgrades]);
-		// get the players choice:
-		int input = Helper.readInt("-> ", 2);
-		Helper.clearConsole();
-		// deal with both cases
-		if (input == 1) {
-			Helper.printHeading("You chose " + atkUpgrades[numAtkUpgrades] + "!");
-			numAtkUpgrades++;
-		} else {
-			Helper.printHeading("You chose " + defUpgrades[numDefUpgrades] + "!");
-			numDefUpgrades++;
-		}
-		Helper.anythingToContinue();
-	}
 
 	public void moneyChange() {
 		Helper.printHeading("What is your initial currency?");

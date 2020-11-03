@@ -1,0 +1,98 @@
+public static int place = 0, act;
+	public static String[] places = { "Everlasting Mountains", "Haunted Landlines", "Castle of the Evil Emperor",
+			"Throne Room" };
+
+
+public String[] atkUpgrades = { "Strength", "Power", "Might", "Gpdlike Strength" };
+	public String[] defUpgrades = { "Heavy Bones", "Stoneskin", "Scale Armor", "Holy Aura" };
+	
+public static void characterInfo() {
+		Helper.clearConsole();
+		Helper.printHeading("CHARACTER INFO");
+		System.out.println(player.name + "\tHP: " + player.hp + "/" + player.maxHp);
+		Helper.printSeperator(20);
+		System.out.println("XP: " + player.xp);
+		Helper.printSeperator(20);
+
+		// // printing the chosen traits
+		// if (player.numAtkUpgrades > 0) {
+		// System.out.println("Offensive trait: " +
+		// player.atkUpgrades[player.numAtkUpgrades - 1]);
+		// printSeperator(20);
+		// }
+		// if (player.numDefUpgrades > 0) {
+		// System.out.println("Defensive trait: " +
+		// player.defUpgrades[player.numDefUpgrades - 1]);
+		// }
+
+		Helper.anythingToContinue();
+	}
+	
+	public static void gameLoop() {
+		while (isRunning) {
+			printMenu();
+			int input = readInt("-> ", 3);
+			if (input == 1)
+				continueJourney();
+			else if (input == 2)
+				characterInfo();
+			else
+				isRunning = false;
+		}
+	}
+
+	public static void continueJourney() {
+
+	}
+
+	public static void printMenu() {
+		clearConsole();
+		printHeading(places[place]);
+		System.out.println("Choose an action:");
+		printSeperator(20);
+		System.out.println("(1) Continue on your journey");
+		System.out.println("(2) Character Info");
+		System.out.println("(3) Exit Game");
+	}
+	
+	
+	public static void characterInfo() {
+		clearConsole();
+		printHeading("CHARACTER INFO");
+		System.out.println(player.name + "\tHP: " + player.hp + "/" + player.maxHp);
+		printSeperator(20);
+		System.out.println("XP: " + player.xp);
+		printSeperator(20);
+
+		// // printing the chosen traits
+		// if (player.numAtkUpgrades > 0) {
+		// System.out.println("Offensive trait: " +
+		// player.atkUpgrades[player.numAtkUpgrades - 1]);
+		// printSeperator(20);
+		// }
+		// if (player.numDefUpgrades > 0) {
+		// System.out.println("Defensive trait: " +
+		// player.defUpgrades[player.numDefUpgrades - 1]);
+		// }
+
+		anythingToContinue();
+	}
+	
+		public void chooseTrait() {
+		Helper.clearConsole();
+		Helper.printHeading("Choose a trait:");
+		System.out.println("(1) " + atkUpgrades[numAtkUpgrades]);
+		System.out.println("(2) " + defUpgrades[numDefUpgrades]);
+		// get the players choice:
+		int input = Helper.readInt("-> ", 2);
+		Helper.clearConsole();
+		// deal with both cases
+		if (input == 1) {
+			Helper.printHeading("You chose " + atkUpgrades[numAtkUpgrades] + "!");
+			numAtkUpgrades++;
+		} else {
+			Helper.printHeading("You chose " + defUpgrades[numDefUpgrades] + "!");
+			numDefUpgrades++;
+		}
+		Helper.anythingToContinue();
+	}
