@@ -1,11 +1,11 @@
 package com.john_evans.Schools;
 
 import com.john_evans.Helper;
-import com.john_evans.Player;
+//import com.john_evans.Player;
 import com.john_evans.Sorting;
 
 public class Ilvermorny extends School {
-	Player player;
+	//Player player;
 
 	public Ilvermorny(String house) {
 		super(house);
